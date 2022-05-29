@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OMS.Data.Model;
 
-namespace OMS.Data.Model
+namespace OMS.Api.Models.Category
 {
-	public class Category
+	public class CategoryModel
 	{
-        public Category()
+        public CategoryModel()
         {
             Products = new HashSet<Product>();
         }
@@ -17,7 +18,6 @@ namespace OMS.Data.Model
         public string CategoryName { get; set; }
         public string Description { get; set; } = null!;
         public byte[] Picture { get; set; } = null!;
-        public bool IsDeleted { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }

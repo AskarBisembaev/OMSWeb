@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OMS.Data.Access.DAL;
 using OMS.Data.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OMSWeb
+namespace OMSWeb.Data.Access.DAL
 {
     public class dbcontext : DbContext
     {
@@ -22,6 +23,14 @@ namespace OMSWeb
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            var mappings = MappingsHelper.GetMainMappings();
+
+            foreach (var mapping in mappings)
+            {
+                mapping.Visit(modelBuilder);
+            }
+
             modelBuilder.Entity<OrderDetails>(entity =>
             {
                 entity.HasKey(e => new { e.OrderId, e.ProductId });
@@ -30,7 +39,7 @@ namespace OMSWeb
 
                 entity.Property(e => e.ProductId).HasColumnType("int").HasColumnName("ProductID");
 
-                entity.Property(e => e.Discount).HasColumnType("real");
+                entity.Property(e => e.Discount).HasColumnType("real").HasColumnName("Discount");
 
                 entity.Property(e => e.Quantity).HasColumnType("smallint").HasDefaultValueSql("1");
 
