@@ -1,21 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMSWeb", "OMSweb2\OMSWeb.csproj", "{5A022757-937C-410A-976E-B2FE89D95D49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS.Api.Common", "OMS.Api.Common\OMS.Api.Common.csproj", "{21553EEE-0651-4776-B52A-3FAE2B8FDC45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Api.Common", "OMS.Api.Common\OMS.Api.Common.csproj", "{21553EEE-0651-4776-B52A-3FAE2B8FDC45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS.Api.Models", "OMS.Api.Models\OMS.Api.Models.csproj", "{32DEFDDD-9A30-419D-B278-C690BD91A020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Api.Models", "OMS.Api.Models\OMS.Api.Models.csproj", "{32DEFDDD-9A30-419D-B278-C690BD91A020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS.Data.Access", "OMS.Data.Access\OMS.Data.Access.csproj", "{8E84EE3E-6115-4C57-B257-9313E4E9F3E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Data.Access", "OMS.Data.Access\OMS.Data.Access.csproj", "{8E84EE3E-6115-4C57-B257-9313E4E9F3E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS.Data.Model", "OMS.Data.Model\OMS.Data.Model.csproj", "{F46F5AA8-E147-4AA7-A62D-94516B00240C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Data.Model", "OMS.Data.Model\OMS.Data.Model.csproj", "{F46F5AA8-E147-4AA7-A62D-94516B00240C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS.Security", "OMS.Security\OMS.Security.csproj", "{AD0444EB-11EC-4F71-AEC5-8A0E4503951A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Security", "OMS.Security\OMS.Security.csproj", "{AD0444EB-11EC-4F71-AEC5-8A0E4503951A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS.Queries", "OMS.Queries\OMS.Queries.csproj", "{A4060EE3-A9BE-4769-8BE7-4CFFB33D8216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Queries", "OMS.Queries\OMS.Queries.csproj", "{A4060EE3-A9BE-4769-8BE7-4CFFB33D8216}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMSWeb", "OMSWeb\OMSWeb.csproj", "{6807CF8B-1317-4DF2-81FC-BBBCD69D18CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5A022757-937C-410A-976E-B2FE89D95D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A022757-937C-410A-976E-B2FE89D95D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A022757-937C-410A-976E-B2FE89D95D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A022757-937C-410A-976E-B2FE89D95D49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{21553EEE-0651-4776-B52A-3FAE2B8FDC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21553EEE-0651-4776-B52A-3FAE2B8FDC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21553EEE-0651-4776-B52A-3FAE2B8FDC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{A4060EE3-A9BE-4769-8BE7-4CFFB33D8216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4060EE3-A9BE-4769-8BE7-4CFFB33D8216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4060EE3-A9BE-4769-8BE7-4CFFB33D8216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6807CF8B-1317-4DF2-81FC-BBBCD69D18CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6807CF8B-1317-4DF2-81FC-BBBCD69D18CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6807CF8B-1317-4DF2-81FC-BBBCD69D18CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6807CF8B-1317-4DF2-81FC-BBBCD69D18CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
