@@ -5,10 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OMSWeb;
+using OMSWeb.Data.Access.DAL;
 
 #nullable disable
 
-namespace OMSweb2.Migrations
+namespace OMSweb.Migrations
 {
     [DbContext(typeof(dbcontext))]
     partial class dbcontextModelSnapshot : ModelSnapshot

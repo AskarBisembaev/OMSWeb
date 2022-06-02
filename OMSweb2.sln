@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMSweb2", "OMSweb2\OMSweb2.csproj", "{5A022757-937C-410A-976E-B2FE89D95D49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMSWeb", "OMSweb2\OMSWeb.csproj", "{5A022757-937C-410A-976E-B2FE89D95D49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OMS.Api.Common", "OMS.Api.Common\OMS.Api.Common.csproj", "{21553EEE-0651-4776-B52A-3FAE2B8FDC45}"
 EndProject

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace OMSweb2.Migrations
+namespace OMSweb.Migrations
 {
     public partial class OMSCreate : Migration
     {
