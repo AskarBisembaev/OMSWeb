@@ -1,12 +1,13 @@
-﻿using System;
+﻿using OMS.Api.Models.Category;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OMS.Data.Model
+namespace OMS.Api.Models.ProductM
 {
-	public class Product
+	public class ProductModel
 	{
         public int ProductId { get; set; }
         public string ProductName { get; set; }
@@ -18,8 +19,7 @@ namespace OMS.Data.Model
         public short? UnitsOnOrder { get; set; }
         public short? ReorderLevel { get; set; }
         public bool Discontinued { get; set; }
-        public bool IsDeleted { get; set; }
 
-        public virtual Category Category { get; set; }
+        public virtual CategoryModel Category { get; set; }
     }
 }
