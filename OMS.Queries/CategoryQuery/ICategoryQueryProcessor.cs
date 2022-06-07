@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OMS.Queries
+namespace OMS.Queries.CategoryQuery
 {
-	public interface IQueryProcessor
+	public interface ICategoryQueryProcessor
 	{
 		IQueryable<Category> Get();
 		Category Get(int id);

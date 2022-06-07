@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OMS.Queries
+namespace OMS.Queries.CategoryQuery
 {
-    public class QueryProcessor : IQueryProcessor
+    public class CategoryQueryProcessor : ICategoryQueryProcessor
     {
         private readonly IUnitOfWork _uow;
 
-        public QueryProcessor(IUnitOfWork uow)
+        public CategoryQueryProcessor(IUnitOfWork uow)
         {
             _uow = uow;
         }
