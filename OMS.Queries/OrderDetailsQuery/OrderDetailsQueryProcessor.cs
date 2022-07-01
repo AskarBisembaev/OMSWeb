@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OMS.Queries.OrderDetailsQuery
 {
-	internal class OrderDetailsQueryProcessor
+	public class OrderDetailsQueryProcessor : IOrderDetailsQueryProcessor
 	{
         private readonly IUnitOfWork _uow;
 

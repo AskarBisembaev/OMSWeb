@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OMS.Queries.OrderDetailsQuery
 {
-	public interface IOrderDetailsQueryProccessor
+	public interface IOrderDetailsQueryProcessor
 	{
 		IQueryable<OrderDetails> Get();
 		OrderDetails Get(int id);

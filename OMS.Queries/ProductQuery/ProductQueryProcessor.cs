@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OMS.Queries.ProductQuery
 {
-	internal class ProductQueryProcessor : IProductQueryProcessor
+	public class ProductQueryProcessor : IProductQueryProcessor
 	{
 		private readonly IUnitOfWork _uow;
 
