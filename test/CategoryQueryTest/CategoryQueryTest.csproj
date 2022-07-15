@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\OMS.Data.Access\OMS.Data.Access.csproj" />
-    <ProjectReference Include="..\..\OMS.Queries\OMS.Queries.csproj" />
+    <ProjectReference Include="..\..\src\OMS.Data.Access\OMS.Data.Access.csproj" />
+    <ProjectReference Include="..\..\src\OMS.Queries\OMS.Queries.csproj" />
   </ItemGroup>
 
 </Project>
