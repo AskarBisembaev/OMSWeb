@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\OMS.Data.Access\OMS.Data.Access.csproj" />
     <ProjectReference Include="..\..\src\OMS.Queries\OMS.Queries.csproj" />
+    <ProjectReference Include="..\OrderQueryTest\OrderQueryTest.csproj" />
   </ItemGroup>
 
 </Project>

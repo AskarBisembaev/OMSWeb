@@ -57,7 +57,6 @@ namespace OMS.Queries.OrderQuery
         {
             var order = GetQuery().FirstOrDefault(x => x.OrderId == id);
 
-            order.OrderId = model.OrderId;
             order.CustomerId = model.CustomerId;
             order.EmployeeId = model.EmployeeId;
             order.OrderDate = model.OrderDate;

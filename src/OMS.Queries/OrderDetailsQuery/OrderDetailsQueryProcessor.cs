@@ -58,7 +58,6 @@ namespace OMS.Queries.OrderDetailsQuery
         {
             var order_details = GetQuery().FirstOrDefault(x => x.OrderId == id);
 
-            order_details.OrderId = model.OrderId;
             order_details.ProductId = model.ProductId;
             order_details.UnitPrice = model.UnitPrice;
             order_details.Quantity = model.Quantity;

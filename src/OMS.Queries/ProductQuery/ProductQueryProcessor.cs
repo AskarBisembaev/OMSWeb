@@ -57,7 +57,6 @@ namespace OMS.Queries.ProductQuery
 		{
 			var product = GetQuery().FirstOrDefault(x => x.ProductId == id);
 
-			product.ProductId = model.ProductId;
 			product.ProductName = model.ProductName;
 			product.UnitPrice = model.UnitPrice;
 			product.SupplierId = model.SupplierId;

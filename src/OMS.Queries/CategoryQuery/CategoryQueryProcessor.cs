@@ -55,7 +55,6 @@ namespace OMS.Queries.CategoryQuery
         {
             var category = GetQuery().FirstOrDefault(x => x.CategoryId == id);
 
-            category.CategoryId = model.CategoryId;
             category.CategoryName = model.CategoryName;
             category.Description = model.Description;
 

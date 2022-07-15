@@ -10,7 +10,6 @@ namespace OMS.Api.Models.Category
 	public class UpdateCategoryModel
 	{
         [Required]
-        public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; } = null!;
     }

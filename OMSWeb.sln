@@ -29,6 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMS.Security", "src\OMS.Sec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OMSWeb", "src\OMSWeb\OMSWeb.csproj", "{CEC28C51-DC04-4D05-8DBD-502B30CD75E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{5A0FAD77-BB6B-41D7-AD75-7660F430B638}"
+	ProjectSection(SolutionItems) = preProject
+		data\toptal.com-Building an ASPNET Web API With ASPNET Core.pdf = data\toptal.com-Building an ASPNET Web API With ASPNET Core.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
