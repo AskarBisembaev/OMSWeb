@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace OMS.Data.Access.Maps.Main
 {
-	public class CategoryMap : IMap
+	public class OrderMap : IMap
 	{
         public void Visit(ModelBuilder builder)
         {
-            builder.Entity<Category>()
-                .ToTable("Categories")
-                .HasKey(x => x.CategoryId);
+            builder.Entity<Order>()
+                .ToTable("Orders")
+                .HasKey(x => x.OrderId);
         }
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OMS.Data.Access.Maps.Main
 {
-	internal class ProductMap : IMap
+	public class ProductMap : IMap
 	{
         public void Visit(ModelBuilder builder)
         {
