@@ -2,7 +2,7 @@
 
 **This project is an example of entity framework 6.0 Web Api**
 
-**This project claims to be a start for a small web IP with crud operations on the Northwind database**
+**This project claims to be a start for a small web API with crud operations on the Northwind database**
 
 **Design patterns:**
 + `Generic repository pattern`
@@ -19,6 +19,3 @@
 + Unit testing - `xUnit` `Moq 4.18.1` `FluentAssertions 6.7.0` 
 + In-Memory caching - `Microsoft Caching`
 + Authentication - `JWT Token`
-
-**The documentation I used -**
-[Building an ASP.NET Web API With ASP.NET Core](https://www.toptal.com/asp-dot-net/asp-net-web-api-tutorial).
