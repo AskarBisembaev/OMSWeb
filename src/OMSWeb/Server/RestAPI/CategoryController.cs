@@ -21,7 +21,7 @@ namespace OMSWeb.Server.RestAPI
         }
 
         [HttpGet]
-        public IQueryable<CategoryModel> Get()
+        public IQueryable<CategoryModel> GetCategory()
         {
             var result = _query.Get();
             var models = _mapper.Map<Category, CategoryModel>(result);

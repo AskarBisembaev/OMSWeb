@@ -18,6 +18,10 @@ using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Swagger;
 using OMSWeb.Data.Access.DAL;
 using Microsoft.OpenApi.Models;
+using OMSWeb.Configurations;
+using OMSWeb.Infrastructure;
+using Hangfire;
+using OMSWeb.Infrastructure.Repositories;
 
 namespace OMSWeb
 {
@@ -37,11 +41,20 @@ namespace OMSWeb
 
 			services.AddDbContext<dbcontext>(options => options.UseSqlServer(connection));
 
+			services.Configure<CacheConfiguration>(Configuration.GetSection("CacheConfiguration"));
+			services.AddMemoryCache();
+			services.AddTransient<MemoryCacheService>();
+			services.AddHangfire(x => x.UseSqlServerStorage(Configuration.GetConnectionString("DefaultConnection")));
+			services.AddHangfireServer();
 			services.AddControllers();
 			services.AddSwaggerGen(c =>
 			{
 				c.SwaggerDoc("v1", new OpenApiInfo { Title = "OMSWebMini", Version = "v1" });
 			});
+
+			services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+			services.AddTransient<ICategoryRepository, CategoryRepository>();
+
 		}
 
 

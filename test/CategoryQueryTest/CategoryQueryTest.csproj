@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="AutoQueryable.AspNetCore.Filter" Version="1.7.0" />
+    <PackageReference Include="Hangfire" Version="1.7.31" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />

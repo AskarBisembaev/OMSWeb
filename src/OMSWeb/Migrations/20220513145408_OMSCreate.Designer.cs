@@ -10,7 +10,7 @@ using OMSWeb.Data.Access.DAL;
 
 #nullable disable
 
-namespace OMSweb2.Migrations
+namespace OMSweb.Migrations
 {
     [DbContext(typeof(dbcontext))]
     [Migration("20220513145408_OMSCreate")]
